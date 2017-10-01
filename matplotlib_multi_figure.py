@@ -16,5 +16,5 @@ for i in range(5):
     plt.sca(axe2)
     plt.plot(x, np.cos(i*x))
 
-
+#这是一个测试
 plt.show()
