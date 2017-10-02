@@ -16,5 +16,5 @@ for i in range(5):
     plt.sca(axe2)
     plt.plot(x, np.cos(i*x))
 
-#ÕâÊÇÒ»¸ö²âÊÔ
+#è¿™æ˜¯ä¸€ä¸ªæµ‹è¯•
 plt.show()
