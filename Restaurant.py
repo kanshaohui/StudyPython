@@ -1,17 +1,17 @@
 class Restaurant():
     """建立所有餐馆的父类"""
-    def __init__(self, restaurant_name, cuision_type):
+    def __init__(self, restaurant_name, cuisine_type):
         self.restaurent_name = restaurant_name
-        self.cuision_type = cuision_type
+        self.cuisine_type = cuisine_type
         self.number_served = 0
 
     def describe_restaurent(self):
         """打印餐馆名称"""
-        print(self.restaurent_name + ' ' + self.cuision_type)
+        print(self.restaurent_name.title() + ' ' + self.cuisine_type)
 
     def open_restaurant(self):
         """打印餐馆开门欢迎语"""
-        print("The " + self.restaurent_name + " is now opened!")
+        print("The " + self.restaurent_name.title() + " is now opened!")
 
     def set_number_served(self, num_people):
         """设置已来访的人员数"""
@@ -23,8 +23,8 @@ class Restaurant():
 
 class IceCreamStand(Restaurant):
     """继承Restaurrent的冰淇淋店"""
-    def __init__(self, restaurant_name, cuision_type, flavors):
-        super().__init__(restaurant_name, cuision_type)
+    def __init__(self, restaurant_name, cuisine_type, flavors):
+        super().__init__(restaurant_name, cuisine_type)
         self.flavors = flavors
 
     def show_icecream(self):
